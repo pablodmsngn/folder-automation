@@ -6,7 +6,7 @@ def get_target_path(extension: str, destinations: dict) -> str:
     for path, extensions in destinations.items():
         if extension.lower() in extensions:
             return path
-    return 'escritorio2/others'
+    return 'others'
 
 def resolve_duplicate(target_folder: str, filename: str) -> str:
     base_name, ext = os.path.splitext(filename)
