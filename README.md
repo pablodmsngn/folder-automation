@@ -81,7 +81,7 @@ The central dictionary defining sorting rules for your assets (images, icons, cs
 * **Scripts**: `assets/module/js`
 
 
-5. Any unrecognized extensions are moved to a default folder: `escritorio2/others`.
+5. Any unrecognized extensions are moved to a default folder: `others`.
 6. The user is prompted to clean up empty folders.
 
 ---
