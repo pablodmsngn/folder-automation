@@ -30,6 +30,7 @@ In this implementation, the **sorting rules are dynamically loaded** from a sing
 │   └── manager.py
 ├── config.json           <-- Main Configuration File
 ├── main.py
+├── .gitignore
 └── README.md
 
 ```
