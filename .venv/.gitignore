@@ -1,0 +1,21 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Archivos de editores de código (PyCharm, VSCode)
+.idea/
+.vscode/
+
+# Archivos del sistema operativo (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+#Archivos propios
+config2.json
+assents/
+test

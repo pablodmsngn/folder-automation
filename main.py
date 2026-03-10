@@ -1,12 +1,22 @@
-from analyzer import folder_analyzer
-from cleaner import remove_empty_folders
-from manager import organize_files
+import os
+
+from src.analyzer import folder_analyzer
+from src.cleaner import remove_empty_folders
+from src.manager import organize_files
+from src.loader import load_config
 
 
 def main():
-    path = str(input("Write the path: "))
-    if path is None:
+    path = str(input("Write the path: ")).strip()
+    if not path:
         raise ValueError("Write the correct path")
+
+
+    path = os.path.abspath(path)
+    if os.name == 'nt' and not path.startswith('\\\\?\\'):
+        path = '\\\\?\\' + path
+
+    config = load_config('config.json')
 
     results_analyzer = folder_analyzer(path)
     print("\n-------------------------------------------------------------------------")
@@ -17,7 +27,7 @@ def main():
     print("\n-------------------------------------------------------------------------")
     print("\n                       Organizing analyzed files")
     print("\n-------------------------------------------------------------------------")
-    if organize_files(path):
+    if organize_files(path,config):
         print(f"\nSuccess! The new files have been organized in '{path}'")
     else:
         print("\nThe folder was already completely organized. No files were moved.")

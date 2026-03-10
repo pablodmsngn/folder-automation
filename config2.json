@@ -1,0 +1,16 @@
+{
+  "escritorio2/python": [".py", ".pyw"],
+  "escritorio2/java": [".java", ".class", ".jar"],
+  "escritorio2/images/gallery": [".jpg", ".jpeg", ".png", ".gif", ".svg"],
+  "escritorio2/icons": [".ico", ".png", ".svg"],
+  "escritorio2/css": [".css", ".scss", ".less"],
+  "escritorio2/templates": [".html", ".htm", ".jinja", ".tpl"],
+  "escritorio2/module/js": [".js", ".mjs", ".ts"],
+  "escritorio2/documents": [".pdf", ".txt", ".docx", ".xlsx", ".pptx"],
+  "escritorio2/fonts": [".ttf", ".woff", ".woff2", ".otf"],
+  "escritorio2/videos": [".mp4", ".avi", ".mov", ".webm"],
+  "escritorio2/audio": [".mp3", ".wav", ".ogg"],
+  "escritorio2/data": [".json", ".csv", ".xml", ".yaml", ".yml"],
+  "escritorio2/config": [".ini", ".cfg", ".env"],
+  "escritorio2/scripts": [".sh", ".bat", ".ps1"]
+}
