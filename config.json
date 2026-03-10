@@ -1,0 +1,9 @@
+{
+    "assets/images/gallery": [".jpg", ".jpeg", ".png"],
+    "assets/icons": [".ico"],
+    "assets/css": [".css"],
+    "assets/templates": [".html"],
+    "assets/module/js": [".js"],
+    "assets/documents": [".pdf", ".txt", ".docx"]
+}
+
